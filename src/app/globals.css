@@ -35,12 +35,11 @@ a {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.28);
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  color: #9ab1d8;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.logo {
+  display: block;
+  width: clamp(120px, 20vw, 180px);
+  height: auto;
+  margin: 0 0 14px;
 }
 
 .title {
@@ -70,4 +69,23 @@ a {
   margin: 14px 0 0;
   color: #9ab1d8;
   font-size: 0.9rem;
+}
+
+.contact {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #2a3447;
+}
+
+.contact-title {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d8e3f7;
+}
+
+.contact-line {
+  margin: 4px 0;
+  color: #b9c8e0;
+  font-size: 0.92rem;
 }

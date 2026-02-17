@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { getUtmParams, initAnalytics, trackEvent } from "@/lib/analytics";
 
 const VIDEO_PATH = "/final_pitch_v2.mp4";
@@ -82,11 +83,17 @@ export default function HomePage() {
   return (
     <main className="page-wrap">
       <section className="card">
-        <p className="eyebrow">Atticus Trade</p>
-        <h1 className="title">Investor Presentation</h1>
+        <Image
+          className="logo"
+          src="https://i.ibb.co/YBfZqnKT/atlogo.png"
+          alt="Atticus logo"
+          width={180}
+          height={72}
+          priority
+        />
+        <h1 className="title">Platform and Live Production Pilot Video</h1>
         <p className="subtitle">
-          Thank you for your time. Please watch the presentation below. If playback does not start
-          smoothly on your connection, use the direct download link.
+          Thank you for watching. A direct download link is available below.
         </p>
         <div className="video-wrap">
           <video
@@ -107,6 +114,21 @@ export default function HomePage() {
             Download video
           </a>
         </p>
+        <div className="contact">
+          <p className="contact-title">Contact</p>
+          <p className="contact-line">
+            Email:{" "}
+            <a href="mailto:michael@atticustrade.com" rel="noreferrer">
+              michael@atticustrade.com
+            </a>
+          </p>
+          <p className="contact-line">
+            Telegram:{" "}
+            <a href="https://t.me/willialso" target="_blank" rel="noreferrer">
+              @willialso
+            </a>
+          </p>
+        </div>
       </section>
     </main>
   );
